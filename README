@@ -8,6 +8,7 @@ Second Step:
 # git clone https://github.com/GDUTCPSDL/caffe_draw.git
 
 Modify draw/draw.sh
-# ./draw/draw.sh
+# chmod +x ./caffe_draw/draw.sh
+# ./caffe_draw/draw.sh
 
 Then you will find graphics in the directory where log file is. 
