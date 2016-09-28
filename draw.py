@@ -49,6 +49,10 @@ def parse_line_list(file_name):
 
 
 def draw_line(column, result, option_num, pic_path, options):
+    """
+    The function draw line,
+    and save the graphics
+    """
     x_num, y_num, description = options[str(option_num)]
     np_result = np.asarray(result).astype(np.float)
 
@@ -71,6 +75,9 @@ def draw_line(column, result, option_num, pic_path, options):
 
 
 def set_option(test_column, train_column):
+    """
+    List all the options it may create
+    """
     for i in range(0, len(test_column)):
         test_column[i] = test_column[i].replace("/", ".")
 
@@ -94,6 +101,9 @@ def set_option(test_column, train_column):
 
 
 def draw(file_name, pic_path):
+    """
+    It's the 'main' function
+    """
     #file_name = sys.argv[1]  # out.log(.train)/out.log(.test)
     #pic_path = sys.argv[2]  # .
     global test_options
@@ -116,6 +126,9 @@ def draw(file_name, pic_path):
 
 
 if __name__ == '__main__':
+    """
+    For test.
+    """
     test_column, result = parse_line_list("out.log.test")
     train_column, result = parse_line_list("out.log.train")
 
