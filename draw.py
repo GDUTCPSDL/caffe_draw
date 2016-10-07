@@ -71,6 +71,7 @@ def draw_line(column, result, option_num, pic_path, options):
     pl.plot(data[column[x_num]], data[column[y_num]], label=column[y_num])
     pl.legend()
     #pl.show()
+    print("DRAWING " + pic_path)
     pl.savefig(pic_path)
 
 
@@ -116,12 +117,12 @@ def draw(file_name, pic_path):
 
     for option_num in [str(i) for i in range(1, (len(test_column)-2)*2+1)]:
         draw_line(test_column, test_result, option_num,
-                  pic_path+file_name+test_options[option_num][2]+".jpg",
+                  pic_path + test_options[option_num][2]+".jpg",
                   test_options)
 
     for option_num in [str(i) for i in range(1, (len(train_column)-2)*2+1)]:
         draw_line(train_column, train_result, option_num,
-                  pic_path+file_name+train_options[option_num][2]+".jpg",
+                  pic_path + train_options[option_num][2]+".jpg",
                   train_options)
 
 
