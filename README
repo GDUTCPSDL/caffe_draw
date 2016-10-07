@@ -1,3 +1,6 @@
+Requirements:
+    Python 2.7.x
+
 First Step:
     Generate log file when training:
         e.g.: 

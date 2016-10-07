@@ -6,6 +6,12 @@ from draw import *
 
 
 if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print("--INVALID INPUT FORMAT--")
+        print("    python caffe_draw/draw_from_log.py [path to log file]")
+        print("--INVALID INPUT FORMAT--")
+        exit()
+
     file_name = sys.argv[1]  # out.log(.train)/out.log(.test)
 
     if '/' in file_name:
