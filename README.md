@@ -6,9 +6,9 @@ When we try to use the application in caffe to generate the graphs about our tra
 ### Examples:
 These are the graphs about googLeNet training. They are in the log_example folder, so you can try it.
 
-![image](https://github.com/aimreant/caffe_draw/log_example/googLeNet/[TEST]NumIters-loss3.top-1.jpg)
+![image](https://raw.githubusercontent.com/aimreant/caffe_draw/master/log_example/googLeNet/%5BTEST%5DNumIters-loss3.top-1.jpg)
 
-![image](https://github.com/aimreant/caffe_draw/log_example/googLeNet/[TEST]NumIters-loss3.loss3.jpg)
+![image](https://raw.githubusercontent.com/aimreant/caffe_draw/master/log_example/googLeNet/%5BTEST%5DNumIters-loss3.loss3.jpg)
 
 
 ## Requirements:
